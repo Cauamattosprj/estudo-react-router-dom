@@ -1,7 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* fonts */
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap"); */
@@ -280,6 +286,9 @@ ul {
 
 .active {
   color: var(--primary-500);
+  background-color: #f8fafc;
+  border-radius: 10px;
+  font-weight: bold;
 }
 .products article {
   margin-bottom: 1rem;
@@ -289,7 +298,6 @@ ul {
   margin-bottom: 0;
 }
 
-.product img {
-  width: 200px;
-  height: 150px;
+.navlink {
+  @apply p-2 hover:bg-slate-300 hover:text-gray-800 rounded-md transition-colors duration-200 w-24 text-center
 }
